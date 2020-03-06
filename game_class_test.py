@@ -4,10 +4,10 @@ class Game:
         self.background_active = background_active
         self.background_position = (0, 0)
 
-    def update_game(self):
+    def print_game(self):
         print(f"Wartość właściwości to {self.background_active}")
 
-# definiujemy funkcję
+# definiujemy funkcję testową
 def test_update():
     background_active = "nazwa_nowa_pliku"
     game.background_active = "jeszcze_inna_nazwa"
@@ -15,12 +15,12 @@ def test_update():
 # tutaj test
 background_active = "nazwa_pliku_01"
 game = Game(background_active)
-game.update_game()
+game.print_game()
 game.background_active = "inna_nazwa"
-game.update_game()
+game.print_game()
 
-# teraz wywołamy funkcję update()
+# teraz wywołamy funkcję testową
 test_update()
 
 # i sprawdzimy
-game.update_game()
+game.print_game()
