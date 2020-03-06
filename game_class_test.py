@@ -9,8 +9,8 @@ class Game:
 
 # definiujemy funkcję testową
 def test_update():
-    background_active = "nazwa_nowa_pliku"
     game.background_active = "jeszcze_inna_nazwa"
+    background_active = "nazwa_nowa_pliku"
 
 # tutaj test
 background_active = "nazwa_pliku_01"
